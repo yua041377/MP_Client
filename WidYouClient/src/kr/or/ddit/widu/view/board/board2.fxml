@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:controller="kr.or.ddit.widu.controller.board.ShowBoardController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="818.0" prefWidth="965.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fx:id="boardImg" fitHeight="101.0" fitWidth="106.0" layoutX="27.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="boardTitle" layoutX="159.0" layoutY="29.0">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+      <Separator layoutX="14.0" layoutY="123.0" prefHeight="3.0" prefWidth="914.0" />
+      <Label fx:id="boardName" layoutX="27.0" layoutY="133.0">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Separator layoutX="22.0" layoutY="240.0" prefHeight="3.0" prefWidth="899.0" />
+      <Label fx:id="boardNicd" layoutX="27.0" layoutY="175.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="boardDate" layoutX="27.0" layoutY="203.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="boardCont" editable="false" layoutX="27.0" layoutY="256.0" prefHeight="200.0" prefWidth="684.0" />
+      <Separator layoutX="22.0" layoutY="479.0" prefHeight="3.0" prefWidth="899.0" />
+      <TextArea fx:id="boardReText" editable="false" layoutX="32.0" layoutY="551.0" prefHeight="89.0" prefWidth="684.0" />
+      <Button onAction="#updateClicked" fx:id="boardmoBtu" layoutX="109.0" layoutY="763.0" mnemonicParsing="false" text="수정" visible="false">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button onAction="#deleteBoard" fx:id="boardTextdelBtu" layoutX="179.0" layoutY="763.0" mnemonicParsing="false" text="삭제" visible="false">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button onAction="#reupdateClicked" fx:id="boardRemoBtn" layoutX="555.0" layoutY="700.0" mnemonicParsing="false" text="수정" visible="false">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button onAction="#redeleteClicked" fx:id="boardRedeBtn" layoutX="605.0" layoutY="700.0" mnemonicParsing="false" text="삭제" visible="false">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button onAction="#mainClicked" fx:id="boardlistBtu" layoutX="38.0" layoutY="763.0" mnemonicParsing="false" text="목록">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <TextArea fx:id="boardReTextO" layoutX="32.0" layoutY="649.0" prefHeight="89.0" prefWidth="684.0" />
+      <Label layoutX="43.0" layoutY="516.0" text="댓글">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="boardreIdO" layoutX="49.0" layoutY="649.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="boardreId" layoutX="49.0" layoutY="555.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button onAction="#saveboard" fx:id="boardReBtn" layoutX="655.0" layoutY="700.0" mnemonicParsing="false" text="등록">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

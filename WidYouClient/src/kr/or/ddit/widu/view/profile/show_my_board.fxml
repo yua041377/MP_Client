@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:controller="kr.or.ddit.widu.view.profile.ShowMyBoardController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="618.0" prefWidth="620.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TabPane layoutX="34.0" layoutY="105.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="478.0" prefWidth="553.0" tabClosingPolicy="UNAVAILABLE">
+         <tabs>
+            <Tab fx:id="board_tab" text="작성 게시글">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="board_tableview" layoutX="14.0" layoutY="65.0" prefHeight="370.0" prefWidth="526.0">
+                           <columns>
+                              <TableColumn fx:id="board_id" prefWidth="75.0" text="번호" />
+                              <TableColumn fx:id="board_title" prefWidth="230.0" text="제목" />
+                              <TableColumn fx:id="board_writer" prefWidth="98.0" text="작성자" />
+                              <TableColumn fx:id="board_date" prefWidth="120.0" text="날짜" />
+                           </columns>
+                        </TableView>
+                        <ComboBox onAction="#board_comboxClicked" fx:id="board_combox" layoutX="14.0" layoutY="28.0" prefWidth="150.0" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab fx:id="comment_tab" text="작성 댓글">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView layoutX="14.0" layoutY="65.0" prefHeight="370.0" prefWidth="526.0">
+                           <columns>
+                              <TableColumn prefWidth="75.0" text="번호" />
+                              <TableColumn prefWidth="263.0" text="제목" />
+                              <TableColumn prefWidth="77.0" text="작성자" />
+                              <TableColumn prefWidth="158.0" text="날짜" />
+                           </columns>
+                        </TableView>
+                        <ComboBox layoutX="14.0" layoutY="28.0" prefWidth="150.0" />
+                     </children></AnchorPane>
+               </content>
+            </Tab>
+         </tabs>
+      </TabPane>
+      <ImageView onMouseClicked="#closed_btnClicked" fx:id="closed_btn" fitHeight="44.0" fitWidth="48.0" layoutX="552.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../img/main/cancel.PNG" />
+         </image></ImageView>
+      <Label alignment="CENTER" layoutX="181.0" layoutY="29.0" prefHeight="58.0" prefWidth="259.0" text="작성한 게시글 조회">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

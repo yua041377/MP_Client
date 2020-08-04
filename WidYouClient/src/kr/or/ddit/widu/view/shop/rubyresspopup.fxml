@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="353.0" prefWidth="405.0" style="-fx-background-color: FFE0C6;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="116.0" layoutY="54.0" style="-fx-font-size: 40; -fx-background-color: FFDAB9;" text="루비 부족" />
+      <Label layoutX="73.0" layoutY="164.0" style="-fx-font-size: 20;" text="회원님의 루비가 부족합니다." />
+      <Label layoutX="116.0" layoutY="202.0" style="-fx-font-size: 20;" text="충전하시겠습니까?" />
+      <JFXButton blendMode="GREEN" buttonType="RAISED" contentDisplay="TOP" layoutX="116.0" layoutY="281.0" style="-fx-background-color: FFBDA3;" text="충전하기">
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton blendMode="GREEN" buttonType="RAISED" contentDisplay="TOP" layoutX="216.0" layoutY="281.0" style="-fx-background-color: FFBDA3;" text="뒤로가기">
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

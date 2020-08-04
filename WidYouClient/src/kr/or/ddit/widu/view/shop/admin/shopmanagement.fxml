@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="495.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kr.or.ddit.widu.controller.shop.admin.ShopMainAdminController">
+   <children>
+      <TabPane fx:id="tab_pane" layoutY="78.0" prefHeight="306.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab fx:id="shop_item" text="아이템">
+               <content>
+                  <ScrollPane prefHeight="200.0" prefWidth="200.0">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="265.0" prefWidth="602.0">
+                           <children>
+                              <TableView fx:id="item_tableview" prefHeight="264.0" prefWidth="587.0">
+                                <columns>
+                                  <TableColumn fx:id="item_num" prefWidth="75.0" text="번호" />
+                                  <TableColumn fx:id="item_productname" prefWidth="135.0" text="상품이름" />
+                                    <TableColumn fx:id="item_productcontent" prefWidth="275.0" text="상품설명" />
+                                    <TableColumn fx:id="item_rubyprice" prefWidth="101.0" text="루비가격" />
+                                </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </ScrollPane>
+               </content>
+          </Tab>
+          <Tab fx:id="shop_ruby" text="루비">
+               <content>
+                  <ScrollPane prefHeight="277.0" prefWidth="578.0">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="300.0" prefWidth="656.0">
+                           <children>
+                              <TableView fx:id="ruby_tableview" prefHeight="262.0" prefWidth="600.0">
+                                <columns>
+                                  <TableColumn fx:id="ruby_num" prefWidth="97.0" text="번호" />
+                                  <TableColumn fx:id="ruby_productname" prefWidth="195.0" text="상품이름" />
+                                    <TableColumn fx:id="ruby_rubycount" prefWidth="138.0" text="루비개수" />
+                                    <TableColumn fx:id="ruby_rubyprice" prefWidth="156.0" text="가격" />
+                                </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </ScrollPane>
+               </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+      <ComboBox fx:id="shop_combobox" layoutX="29.0" layoutY="396.0" prefHeight="34.0" prefWidth="119.0" />
+      <JFXTextField fx:id="shop_content_input" layoutX="172.0" layoutY="403.0" prefHeight="23.0" prefWidth="237.0" promptText="내용을 입력해주세요 ▶" />
+      <JFXButton fx:id="shop_select" buttonType="RAISED" layoutX="429.0" layoutY="400.0" prefHeight="31.0" prefWidth="74.0" text="검색" />
+      <JFXButton fx:id="shop_add" buttonType="RAISED" layoutX="429.0" layoutY="450.0" prefHeight="31.0" prefWidth="74.0" text="추가" />
+      <JFXButton fx:id="shop_delete" buttonType="RAISED" layoutX="503.0" layoutY="450.0" prefHeight="31.0" prefWidth="74.0" text="삭제" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="200.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../img/shop/주석%202020-07-29%20151023.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

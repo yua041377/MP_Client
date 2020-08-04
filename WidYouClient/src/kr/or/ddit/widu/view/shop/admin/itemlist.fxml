@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="629.0" prefWidth="472.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kr.or.ddit.widu.controller.shop.admin.itemlistController">
+   <children>
+      <ImageView fx:id="picture" fitHeight="150.0" fitWidth="200.0" layoutX="133.0" layoutY="120.0" pickOnBounds="true" preserveRatio="true" />
+      <JFXTextField fx:id="product_name" layoutX="190.0" layoutY="316.0" />
+      <ImageView layoutX="160.0" layoutY="356.0">
+         <image>
+            <Image url="@../../../../../../../../img/shop/주석%202020-07-29%20153829.png" />
+         </image>
+      </ImageView>
+      <ImageView layoutX="89.0" layoutY="309.0">
+         <image>
+            <Image url="@../../../../../../../../img/shop/주석%202020-07-29%20153922.png" />
+         </image>
+      </ImageView>
+      <JFXTextArea fx:id="product_detail" layoutX="37.0" layoutY="384.0" prefHeight="139.0" prefWidth="398.0" />
+      <JFXTextField fx:id="ruby_price" alignment="CENTER_RIGHT" layoutX="216.0" layoutY="547.0" prefHeight="23.0" prefWidth="96.0" />
+      <JFXButton fx:id="item_close" layoutX="239.0" layoutY="597.0" text="닫기" />
+      <ImageView layoutX="152.0" layoutY="541.0">
+         <image>
+            <Image url="@../../../../../../../../img/shop/주석%202020-07-29%20154551.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="52.0" fitWidth="255.0" layoutX="105.0" layoutY="50.0">
+         <image>
+            <Image url="@../../../../../../../../img/shop/아이템%20목록.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btn_modify" layoutX="193.0" layoutY="597.0" text="수정" />
+      <JFXComboBox fx:id="item_combobox" layoutX="170.0" layoutY="274.0" prefHeight="23.0" prefWidth="114.0" promptText="카테고리" />
+   </children>
+</AnchorPane>

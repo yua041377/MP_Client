@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="344.0" prefWidth="374.0" style="-fx-background-color: FFE0C6;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="88.0" layoutY="59.0" style="-fx-font-size: 40; -fx-background-color: FFDAB9;" text="선물보내기" />
+      <Label layoutX="76.0" layoutY="193.0" style="-fx-font-size: 20;" text=" 선물을 보내시겠습니까?" />
+      <JFXButton blendMode="GREEN" contentDisplay="TOP" layoutX="116.0" layoutY="281.0" style="-fx-background-color: FFBDA3;" text="보내기">
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton blendMode="GREEN" contentDisplay="TOP" layoutX="199.0" layoutY="281.0" style="-fx-background-color: FFBDA3;" text="취소하기">
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor>
+      </JFXButton>
+      <Label layoutX="87.0" layoutY="160.0" style="-fx-font-size: 20;" text="                     님 에게" />
+   </children>
+</AnchorPane>

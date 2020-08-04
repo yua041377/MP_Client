@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:controller="kr.or.ddit.widu.controller.shop.admin.rubymodifypopupController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="353.0" prefWidth="405.0" style="-fx-background-color: FFE0C6;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="62.0" layoutY="177.0" style="-fx-font-size: 20;" text="루비상품을 수정 하시겠습니까?" />
+      <JFXButton fx:id="modify_btn" blendMode="GREEN" buttonType="RAISED" contentDisplay="TOP" layoutX="129.0" layoutY="281.0" style="-fx-background-color: FFBDA3;" text="수정하기">
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="reset_btn" blendMode="GREEN" buttonType="RAISED" contentDisplay="TOP" layoutX="203.0" layoutY="281.0" style="-fx-background-color: FFBDA3;" text="취소하기">
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor>
+      </JFXButton>
+      <ImageView fitHeight="73.0" fitWidth="248.0" layoutX="79.0" layoutY="48.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../img/shop/루비수정글자.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

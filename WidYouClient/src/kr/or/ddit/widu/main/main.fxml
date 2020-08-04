@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Circle?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="780.0" prefWidth="1252.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kr.or.ddit.widu.main.WidUClientMainController">
+   <children>
+      <BorderPane fx:id="borderPane" layoutX="36.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="780.0" prefWidth="1210.0">
+         <top>
+            <AnchorPane fx:id="header" prefHeight="140.0" prefWidth="1210.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fx:id="go_home" fitHeight="117.0" fitWidth="134.0" layoutX="50.0" layoutY="13.0" onMouseClicked="#ho_homeClicked" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../img/main/logo_sample.PNG" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="session_nickname" layoutX="665.0" layoutY="25.0" prefHeight="22.0" prefWidth="52.0" />
+                  <Label layoutX="724.0" layoutY="32.0" prefHeight="15.0" prefWidth="93.0" text="님 환영합니다!!" />
+                  <ImageView fx:id="go_shop" fitHeight="53.0" fitWidth="59.0" layoutX="839.0" layoutY="13.0" onMouseClicked="#go_shopClicked" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../img/main/shop.PNG" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="go_cart" fitHeight="53.0" fitWidth="59.0" layoutX="909.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../img/main/shopping_cart.PNG" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="show_alarm" fitHeight="53.0" fitWidth="59.0" layoutX="983.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../img/main/alarm.PNG" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="alarm_count" alignment="CENTER" layoutX="1010.0" layoutY="13.0" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: red; -fx-background-radius: 50%; -fx-text-fill: white;" text="0" visible="false" />
+                  <Circle fx:id="go_mypage" fill="DODGERBLUE" layoutX="628.0" layoutY="32.0" radius="23.0" stroke="BLACK" strokeType="INSIDE" />
+               </children>
+            </AnchorPane>
+         </top>
+      </BorderPane>
+      <JFXDrawer fx:id="drawer" defaultDrawerSize="529.0" direction="RIGHT" layoutX="754.0" layoutY="5.0" prefHeight="771.0" prefWidth="508.0" />
+      <JFXHamburger fx:id="hamburger" layoutX="1082.0" layoutY="26.0" prefHeight="108.0" prefWidth="124.0" />
+   </children>
+</AnchorPane>

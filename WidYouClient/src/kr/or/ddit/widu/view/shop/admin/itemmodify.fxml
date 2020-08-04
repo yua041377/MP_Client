@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="685.0" prefWidth="523.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="237.0" layoutX="143.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../img/shop/아이템.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="picture" fitHeight="150.0" fitWidth="200.0" layoutX="162.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true" />
+      <JFXButton fx:id="picture_upload" layoutX="219.0" layoutY="300.0" text="사진 업로드" />
+      <JFXTextField fx:id="product_name" layoutX="219.0" layoutY="354.0" />
+      <ImageView layoutX="189.0" layoutY="398.0">
+         <image>
+            <Image url="@../../../../../../../../img/shop/주석%202020-07-29%20153829.png" />
+         </image>
+      </ImageView>
+      <ImageView layoutX="118.0" layoutY="347.0">
+         <image>
+            <Image url="@../../../../../../../../img/shop/주석%202020-07-29%20153922.png" />
+         </image>
+      </ImageView>
+      <JFXTextArea fx:id="product_detail" layoutX="66.0" layoutY="426.0" prefHeight="139.0" prefWidth="398.0" />
+      <JFXTextField fx:id="ruby_price" layoutX="207.0" layoutY="590.0" />
+      <JFXButton fx:id="item_modify" layoutX="189.0" layoutY="639.0" text="수정하기" />
+      <JFXButton fx:id="item_close" layoutX="275.0" layoutY="639.0" text="닫기" />
+      <ImageView layoutX="149.0" layoutY="590.0">
+         <image>
+            <Image url="@../../../../../../../../img/shop/루비글자.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

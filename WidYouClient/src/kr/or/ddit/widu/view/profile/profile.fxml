@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:controller="kr.or.ddit.widu.view.profile.ProfileController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="727.0" prefWidth="503.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Circle fx:id="profile_picture" fill="DODGERBLUE" layoutX="130.0" layoutY="100.0" radius="62.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label fx:id="mem_nick_name" layoutX="235.0" layoutY="78.0" prefHeight="44.0" prefWidth="90.0" text="닉네임">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="325.0" layoutY="78.0" prefHeight="44.0" prefWidth="124.0" text="님의 프로필">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ImageView onMouseClicked="#closed_btnClicked" fx:id="closed_btn" fitHeight="44.0" fitWidth="43.0" layoutX="442.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../img/main/cancel.PNG" />
+         </image></ImageView>
+      <Button fx:id="pofile_modify_btn" layoutX="231.0" layoutY="132.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="189.0" text="프로필 수정하기" />
+      <ImageView fx:id="go_gift" fitHeight="54.0" fitWidth="43.0" layoutX="230.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../img/main/gift.PNG" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="like_image" fitHeight="55.0" fitWidth="43.0" layoutX="47.0" layoutY="180.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../img/profile/likebutton.PNG" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="hate_image" fitHeight="41.0" fitWidth="60.0" layoutX="130.0" layoutY="180.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../img/profile/hatebutton.PNG" />
+         </image>
+      </ImageView>
+      <Label fx:id="like_count" layoutX="95.0" layoutY="188.0" prefHeight="41.0" prefWidth="34.0" text="Label" />
+      <Label fx:id="hate_count" layoutX="181.0" layoutY="188.0" prefHeight="41.0" prefWidth="34.0" text="Label" />
+      <Separator layoutX="24.0" layoutY="229.0" prefHeight="11.0" prefWidth="456.0" />
+      <Button fx:id="matching_list_btn" layoutX="58.0" layoutY="252.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="387.0" text="매칭내역확인" />
+      <Button fx:id="chatting_btn" layoutX="58.0" layoutY="311.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="387.0" text="대화방" />
+      <Button fx:id="show_profile_list_btn" layoutX="59.0" layoutY="372.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="387.0" text="프로필조회내역" />
+      <Button onAction="#myBoardBtnClicked" fx:id="my_board_list_btn" layoutX="59.0" layoutY="431.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="387.0" text="작성게시글 조회" />
+      <Button fx:id="center_list_btn" layoutX="59.0" layoutY="624.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="387.0" text=" 고객샌터 문의내역 조회하기" />
+      <Button fx:id="buy_list_btn" layoutX="59.0" layoutY="495.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="387.0" text="구매내역확인" />
+      <Button fx:id="item_box_btn" layoutX="60.0" layoutY="561.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="387.0" text="아이템 보관함" />
+   </children>
+</AnchorPane>

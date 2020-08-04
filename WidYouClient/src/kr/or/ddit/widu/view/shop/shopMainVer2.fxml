@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="525.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kr.or.ddit.widu.controller.shop.ShopController">
+   <children>
+      <ImageView fitHeight="77.0" fitWidth="322.0" layoutX="8.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../img/shop/주석%202020-07-27%20144829.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="31.0" fitWidth="30.0" layoutX="598.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../img/shop/아이템보관함.png" />
+         </image>
+      </ImageView>
+      <ScrollPane layoutX="528.0" layoutY="85.0" prefHeight="431.0" prefWidth="170.0">
+         <content>
+            <VBox fx:id="recent_product_box" prefWidth="168.0" />
+         </content>
+      </ScrollPane>
+      <ImageView fitHeight="90.0" fitWidth="504.0" layoutX="31.0" layoutY="87.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../img/shop/이벤트배너.png" />
+         </image>
+      </ImageView>
+      <HBox fx:id="new_box" layoutX="14.0" layoutY="230.0" prefHeight="126.0" prefWidth="482.0" />
+      <HBox fx:id="popular_box" layoutX="14.0" layoutY="410.0" prefHeight="126.0" prefWidth="482.0" />
+      <ImageView fitHeight="34.0" fitWidth="91.0" layoutX="13.0" layoutY="188.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../img/shop/신상품글자.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="34.0" fitWidth="91.0" layoutX="14.0" layoutY="367.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../img/shop/인기상품글자.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="34.0" fitWidth="134.0" layoutX="550.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../img/shop/최근에본상품글자.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

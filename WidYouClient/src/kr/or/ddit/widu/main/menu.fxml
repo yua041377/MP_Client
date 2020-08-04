@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+
+
+<ScrollPane fx:controller="kr.or.ddit.widu.main.WidUClientMenuController" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="424.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <content>
+      <AnchorPane prefHeight="1200.0" prefWidth="422.0">
+         <children>
+            <Label fx:id="user_nickName" layoutX="162.0" layoutY="45.0" prefHeight="34.0" prefWidth="100.0" text="닉네임" />
+            <Label fx:id="user_rank" layoutX="162.0" layoutY="79.0" prefHeight="33.0" prefWidth="70.0" text="등급" />
+            <Label fx:id="user_ruby" layoutX="162.0" layoutY="112.0" prefHeight="25.0" prefWidth="90.0" text="루비보유수" />
+            <Separator layoutX="26.0" layoutY="174.0" prefHeight="17.0" prefWidth="373.0" />
+            <ImageView onMouseClicked="#clicked" fx:id="close_btn" fitHeight="30.0" fitWidth="30.0" layoutX="369.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../img/main/cancel.PNG" />
+               </image>
+            </ImageView>
+            <Button onAction="#logOutBtnClicked" fx:id="log_out_btn" layoutX="283.0" layoutY="101.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="86.0" text="로그아웃" />
+            <ImageView fx:id="go_minihomepi" fitHeight="35.0" fitWidth="33.0" layoutX="283.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../img/main/hompage.PNG" />
+               </image>
+            </ImageView>
+            <Circle onMouseClicked="#goMyProfile" fx:id="profile_img" fill="DODGERBLUE" layoutX="76.0" layoutY="82.0" radius="50.0" stroke="BLACK" strokeType="INSIDE" />
+            <Label layoutX="26.0" layoutY="145.0" prefHeight="29.0" prefWidth="59.0" text="매칭" />
+            <Button fx:id="profile_search_btn" layoutX="46.0" layoutY="199.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="139.0" text="프로필 검색" />
+            <Button fx:id="random_matching_btn" layoutX="230.0" layoutY="199.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="139.0" text="랜덤매칭" />
+            <Button fx:id="show_rank_btn" layoutX="46.0" layoutY="264.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="139.0" text="랭킹보기" />
+            <Separator layoutX="26.0" layoutY="355.0" prefHeight="17.0" prefWidth="373.0" />
+            <Label layoutX="26.0" layoutY="326.0" prefHeight="29.0" prefWidth="59.0" text="컨설턴팅" />
+            <Button fx:id="con_info_btn" layoutX="46.0" layoutY="380.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="139.0" text="컨설턴트 소개" />
+            <Button fx:id="con_matching_btn" layoutX="230.0" layoutY="380.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="139.0" text="컨설턴트 매칭" />
+            <Separator layoutX="26.0" layoutY="478.0" prefHeight="17.0" prefWidth="373.0" />
+            <Label layoutX="26.0" layoutY="449.0" prefHeight="29.0" prefWidth="59.0" text="게시판" />
+            <Button onAction="#free_board_clicked" fx:id="free_board_btn" layoutX="46.0" layoutY="503.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="139.0" text="자유게시판" />
+            <Button onAction="#tip_board_clicked" fx:id="tip_board_btn" layoutX="230.0" layoutY="503.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="139.0" text="연애팁 게시판" />
+            <Button onAction="#lfl_board_clicked" fx:id="lfl_board_btn" layoutX="46.0" layoutY="569.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="139.0" text="Look for Love 게시판" />
+            <Button onAction="#location_board_clicked" fx:id="location_board_btn" layoutX="230.0" layoutY="569.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="139.0" text="지역게시판" />
+            <Button onAction="#mf_board_clicked" fx:id="mf_board_btn" layoutX="46.0" layoutY="632.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="139.0" text="친구만들기 게시판" />
+            <Button onAction="#review_board_clicked" fx:id="review_board_btn" layoutX="230.0" layoutY="632.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="139.0" text="리뷰 게시판" />
+            <Button onAction="#hob_board_clicked" fx:id="hob_board_btn" layoutX="46.0" layoutY="693.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="139.0" text="관심분야 게시판" />
+            <Label layoutX="26.0" layoutY="760.0" prefHeight="29.0" prefWidth="75.0" text="get ruby!!!" />
+            <Button fx:id="att_btn" layoutX="46.0" layoutY="814.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="139.0" text="출석체크" />
+            <Button fx:id="roulette_btn" layoutX="230.0" layoutY="814.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="139.0" text="룰렛" />
+            <Button fx:id="word_btn"  layoutX="46.0" layoutY="880.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="139.0" text="이상형월드컵" />
+            <Button fx:id="talot_btn" layoutX="230.0" layoutY="880.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="139.0" text="타로보기" />
+            <Button fx:id="name_game_btn" layoutX="46.0" layoutY="943.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="139.0" text="이름궁합" />
+            <Button fx:id="same_idol_btn" layoutX="230.0" layoutY="943.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="139.0" text="닮은꼴 연애인" />
+            <Separator layoutX="25.0" layoutY="789.0" prefHeight="17.0" prefWidth="373.0" />
+            <Label layoutX="22.0" layoutY="1001.0" prefHeight="29.0" prefWidth="75.0" text="고객 센터" />
+            <Button fx:id="notice_btn" layoutX="42.0" layoutY="1055.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="139.0" text="공지사항" />
+            <Button onAction="#qnaBoaedClicked" fx:id="qna_board_btn" layoutX="226.0" layoutY="1055.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="139.0" text="문의게시판" />
+            <Button onAction="#sos_boardClicked" fx:id="sos_board_btn" layoutX="42.0" layoutY="1121.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="139.0" text="신고게시판" />
+            <Separator layoutX="21.0" layoutY="1030.0" prefHeight="17.0" prefWidth="373.0" />
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>
