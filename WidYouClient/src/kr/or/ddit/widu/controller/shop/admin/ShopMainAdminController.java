@@ -78,32 +78,32 @@ public class ShopMainAdminController implements Initializable {
 			    }
 			);
 		
-		shop_combobox.setPromptText("카테고리");
-		ObservableList<String> ob_comboList = FXCollections.observableArrayList("이름", "가격");
+		shop_combobox.setPromptText("移댄뀒怨좊━");
+		ObservableList<String> ob_comboList = FXCollections.observableArrayList("�씠由�", "媛�寃�");
 		shop_combobox.setItems(ob_comboList);
 
-		// 추가 버튼 이벤트
+		// 異붽� 踰꾪듉 �씠踰ㅽ듃
 		
 		shop_add.setOnAction(event -> {
 			
-			//아이템 추가
+			//�븘�씠�뀥 異붽�
 			if(tab_pane.getSelectionModel().getSelectedIndex() == 0) {
 				
-			Store.newWindow_Modal(getClass().getResource("/kr/or/ddit/widu/view/shop/admin/itemadd.fxml"), "추가", null);
+			Store.newWindow_Modal(getClass().getResource("/kr/or/ddit/widu/view/shop/admin/itemadd.fxml"), "異붽�", null);
 			Map<String, String> params = new HashMap<String, String>();
 			update(params);
 			
 			}
-			//루비 추가
+			//猷⑤퉬 異붽�
 			else {
-			Store.newWindow_Modal(getClass().getResource("/kr/or/ddit/widu/view/shop/admin/rubyadd.fxml"), "추가", null);
+			Store.newWindow_Modal(getClass().getResource("/kr/or/ddit/widu/view/shop/admin/rubyadd.fxml"), "異붽�", null);
 			Map<String, String> params = new HashMap<String, String>();
 			update(params);
 				
 			}
 		});
 
-		// 목록 출력 이벤트
+		// 紐⑸줉 異쒕젰 �씠踰ㅽ듃
 		item_tableview.setOnMouseClicked(event -> {
 			
 			if (event.getClickCount() > 1) {
@@ -115,7 +115,7 @@ public class ShopMainAdminController implements Initializable {
 				
 				shopDataManage.itemInfo = itemInfo;
 
-				Store.newWindow_Modal(getClass().getResource("/kr/or/ddit/widu/view/shop/admin/itemlist.fxml"), "목록보여주기",
+				Store.newWindow_Modal(getClass().getResource("/kr/or/ddit/widu/view/shop/admin/itemlist.fxml"), "紐⑸줉蹂댁뿬二쇨린",
 						null);
 				
 				Map<String, String> params = new HashMap<String, String>();
@@ -123,7 +123,7 @@ public class ShopMainAdminController implements Initializable {
 			}
 		});
 		
-		//루비 목록 보여주기
+		//猷⑤퉬 紐⑸줉 蹂댁뿬二쇨린
 		ruby_tableview.setOnMouseClicked(event -> {
 			if (event.getClickCount() > 1) {
 				Shop_RubbyVO itemInfo = ruby_tableview.getSelectionModel().getSelectedItem();
@@ -134,7 +134,7 @@ public class ShopMainAdminController implements Initializable {
 				
 				shopDataManage.itemInfo_1 = itemInfo;
 
-				Store.newWindow_Modal(getClass().getResource("/kr/or/ddit/widu/view/shop/admin/rubymodify.fxml"), "목록보여주기",
+				Store.newWindow_Modal(getClass().getResource("/kr/or/ddit/widu/view/shop/admin/rubymodify.fxml"), "紐⑸줉蹂댁뿬二쇨린",
 						null);
 				
 				Map<String, String> params = new HashMap<String, String>();
@@ -142,7 +142,7 @@ public class ShopMainAdminController implements Initializable {
 			}
 		});
 		
-		// 삭제 버튼!
+		// �궘�젣 踰꾪듉!
 		shop_delete.setOnAction(event -> {
 			if(tab_pane.getSelectionModel().getSelectedIndex() == 0) {
 				Shop_ItemVO itemInfo = item_tableview.getSelectionModel().getSelectedItem();
@@ -152,7 +152,7 @@ public class ShopMainAdminController implements Initializable {
 				}
 				shopDataManage.itemInfo = itemInfo;
 				
-				Store.newWindow_Modal(getClass().getResource("/kr/or/ddit/widu/view/shop/admin/itemdeletepopup.fxml"), "삭제", null);
+				Store.newWindow_Modal(getClass().getResource("/kr/or/ddit/widu/view/shop/admin/itemdeletepopup.fxml"), "�궘�젣", null);
 			} else if (tab_pane.getSelectionModel().getSelectedIndex() == 1) {
 				Shop_RubbyVO itemInfo = ruby_tableview.getSelectionModel().getSelectedItem();
 				
@@ -162,20 +162,20 @@ public class ShopMainAdminController implements Initializable {
 				
 				shopDataManage.itemInfo_1 = itemInfo;
 				
-				Store.newWindow_Modal(getClass().getResource("/kr/or/ddit/widu/view/shop/admin/rubydeletepopup.fxml"), "삭제", null);
+				Store.newWindow_Modal(getClass().getResource("/kr/or/ddit/widu/view/shop/admin/rubydeletepopup.fxml"), "�궘�젣", null);
 			}
 			
 			Map<String, String> params = new HashMap<String, String>();
 			update(params);
 		});
 		
-		// 검색 버튼
+		// 寃��깋 踰꾪듉
 		shop_select.setOnAction(event -> {
 			String search_keycode = shop_combobox.getValue().trim();
 			String search_keyword = shop_content_input.getText().trim();
 			
 			if (search_keycode == null) {
-				Store.alertInformation("안내", null, "카테고리를 선택해주세요!");
+				Store.alertInformation("�븞�궡", null, "移댄뀒怨좊━瑜� �꽑�깮�빐二쇱꽭�슂!");
 				return;
 			}
 			
